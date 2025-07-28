@@ -12,7 +12,7 @@ import org.springframework.data.relational.core.mapping.Table;
 @Table("curso")
 public class Curso {
     @Id
-    private Long id;
+    private Integer id;
     private String nombre;
     private String codigo;
     private String estado;

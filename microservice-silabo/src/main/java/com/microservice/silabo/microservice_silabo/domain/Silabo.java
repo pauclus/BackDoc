@@ -13,9 +13,13 @@ import org.springframework.data.relational.core.mapping.Table;
 public class Silabo {
     @Id
     private Long id;
-    private String cursoId;
+    private Integer cursoId;
     private String nombre;
     private String estrategiaDidactica;
     private String bibliografia;
+
+    public Silabo(Integer cursoId){
+        this.cursoId = cursoId;
+    }
     
 }
